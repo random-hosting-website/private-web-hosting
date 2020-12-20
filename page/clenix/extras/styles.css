@@ -1,0 +1,85 @@
+.alt-clean {
+  position: relative;
+  padding: 15px 0 !important;
+}
+.alt-clean img {
+  width: 50% !important;
+}
+.section-padding-10-9 {
+  padding: 5rem 0 !important;
+}
+.about-box-layout2 {
+  position: absolute;
+  background-image: url("../assets/img/95e4d460-ff57-4b1c-a6e6-881e99d67b20.jpeg");
+  background-repeat: no-repeat !important;
+  background-size: 100% 80% !important;
+  background-position: bottom !important;
+  width: 47%;
+  height: 100%;
+  top: 0;
+}
+.about-box-layout2:before {
+  position: absolute;
+  content: "";
+  top: 0;
+  right: 30px;
+  width: 50%;
+  height: 100%;
+  z-index: -1;
+  background: #0367e8;
+  box-shadow: 0px 9px 20.8px 1.2px rgba(16, 37, 65, 0.16);
+}
+.about-box-layout2:after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 50px;
+  height: 50px;
+  background: #fee026;
+  box-shadow: 0px 9px 20.8px 1.2px rgba(16, 37, 65, 0.16);
+}
+.about-box-layout2-dust-bunnies-img {
+  position: absolute;
+  background-image: url("../assets/img/features-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-size: cover;
+  right: 0;
+  top: 0;
+  height: 100%;
+  width: 45%;
+}
+.section-nine #mapid {
+  display: none;
+}
+.section-nine #alt-cleaning-map {
+  position: relative;
+  width: 100%;
+  height: 80vh;
+  left: 0%;
+  margin-top: 45px;
+}
+.section-nine #ramirez-cleaning-map {
+  position: relative;
+  width: 100%;
+  height: 80vh;
+  left: 0%;
+  margin-top: 45px;
+}
+
+.section-nine #the-dust-bunnies-llc-map {
+  position: relative;
+  width: 100%;
+  height: 80vh;
+  left: 0%;
+  margin-top: 45px;
+}
+
+.section-nine #bridge-city-gap-map {
+  position: relative;
+  width: 100%;
+  height: 80vh;
+  left: 0%;
+  margin-top: 45px;
+}
