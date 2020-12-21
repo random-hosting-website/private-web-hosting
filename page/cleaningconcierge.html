@@ -21,6 +21,7 @@
     <link rel="stylesheet" href="./clenix/assets/css/select2.min.css">
     <link rel="stylesheet" href="./clenix/assets/css/jquery.datetimepicker.css">
     <link rel="stylesheet" href="./clenix/assets/css/style.css">
+    <link rel="stylesheet" href="./clenix/assets/css/cleaningConciergeMap.css">
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
     <link href="./clenix/assets/css/slick.css" rel="stylesheet">
     <link href="./clenix/assets/css/lightbox.css" rel="stylesheet">
@@ -241,7 +242,7 @@
                         </div>
                         <div class="item-content">
                             <h3 class="item-title">Janitorial</h3>
-                            <p>Do you dread going to work? Dust bunnies everywhere? WE CAN HELP!</p>
+                            <p>Do your dread going to work? cleaning concierge everywhere? WE CAN HELP!</p>
                         </div>
                     </div>
                 </div>
@@ -833,6 +834,7 @@
                 </ul>
             </div>
             <div id="mapid"></div>
+            <div id="cleaning-concierge-map"></div>
         </div>
     </section>
     <!-- Location Section End -->
@@ -1173,6 +1175,17 @@
     <script src="./clenix/assets/js/main.js"></script>
     <script>
         new WOW().init();
+
+        function cleaningConciergeMap() {
+            var map = L.map('cleaning-concierge-map').setView([30.03093, -90.04363], 9);
+            mapLink = '<a href="http://openstreetmap.org">OpenStreetMap</a>';
+            L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                attribution: '&copy; ' + mapLink + ' Contributors',
+                maxZoom: 18,
+            }).addTo(map);
+            map = L.circle([30.03093, -90.04363], { radius: 40000 }).addTo(map);;
+        }
+        cleaningConciergeMap();
     </script>
 </body>
 

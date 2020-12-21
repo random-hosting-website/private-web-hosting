@@ -185,7 +185,8 @@
                         <div class="popup-img">
                             <img src="./clenix/assets/img/figure/about.jpg" alt="thumb">
                             <div class="item-icon">
-                                <a class="play-btn popup-youtube" href="https://www.youtube.com/watch?v=1iIZeIy7TqM">
+                                <a class="play-btn popup-youtube" target="_blank"
+                                    href="https://www.youtube.com/watch?v=1iIZeIy7TqM">
                                     <i class="flaticon-play-arrow"></i>
                                 </a>
                             </div>
@@ -824,7 +825,8 @@
                     <li>McKinney,</li>
                     <li>Richardson,</li>
                     <li>Amarillo,</li>
-                    <li>Fort Worth Grapevine,</li>
+                    <li>Fort Worth,</li>
+                    <li>Grapevine,</li>
                     <li>Grand Prairie,</li>
                     <li>and more.</li>
                 </ul>
@@ -1170,28 +1172,33 @@
 
         function ramirezCleaning() {
             var planes = [
-                ["5555 N Lamar Blvd, Austin, TX 78652", 30.428, - 97.244],
-                ["5555 N Lamar Blvd, Austin, TX 78654", 30.567, - 98.308],
-                ["5555 N Lamar Blvd, Austin, TX 78710", 30.352, - 97.715],
-                ["5555 N Lamar Blvd, Austin, TX 78730", 30.360, - 97.831],
-                ["5555 N Lamar Blvd, Austin, TX 78715", 30.450, - 97.487],
-                ["5555 N Lamar Blvd, Austin, TX 78731", 30.344, - 97.764],
-                ["5555 N Lamar Blvd, Austin, TX 78721", 30.273, - 97.687],
-            ];
+                ["5555 N Lamar Blvd, Millersburg, OH 44654", 41.533,
+                    - 82.759],
+                ["5555 N Lamar Blvd, Port Clinton, OH 43452", 41.513,
+                    - 82.929],
+                ["5555 N Lamar Blvd, Catawba, OH 43010", 40.000,
+                    - 83.621],
+                ["5555 N Lamar Blvd, Castalia, OH 44824", 41.394,
+                    - 82.806],
+                ["5555 N Lamar Blvd, Perkins, OH 44870", 41.426,
+                    - 82.711],
 
-            var map = L.map('the-purple-fig-map').setView([30.437, - 97.708], 10);
+                ["5555 N Lamar Blvd, Bayview, OH 44871", 41.492,
+                    - 82.648
+                ],
+                ["5555 N Lamar Blvd, Wooster, OH 44691", 40.800,
+                    - 81.957],
+                ["5555 N Lamar Blvd, Shreve, OH 44676", 40.688, - 82.026],
+                ["5555 N Lamar Blvd, Millersburg, OH 44654", 40.542,
+                    - 81.879],
+            ];
+            var map = L.map('the-purple-fig-map').setView([32.77991, -97.04894], 9);
             mapLink = '<a href="http://openstreetmap.org">OpenStreetMap</a>';
             L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
                 attribution: '&copy; ' + mapLink + ' Contributors',
                 maxZoom: 18,
             }).addTo(map);
-
-            for (var i = 0; i < planes.length; i++) {
-                marker = new L.marker([planes[i][1], planes[i][2]])
-                    .bindPopup(planes[i][0])
-                    .addTo(map);
-                marker._icon.classList.add("huechange");
-            }
+            map = L.circle([32.77991, -97.04894], { radius: 40000 }).addTo(map);;
         }
         ramirezCleaning();
     </script>

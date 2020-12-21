@@ -1014,6 +1014,23 @@ h6 {
   opacity: 0.95;
   background: #0367e8;
 }
+.slider-layout1-img-bg {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  background: url("../img/pexels-pixabay-280193.jpg") no-repeat center / cover;
+}
+.slider-layout1-img-bg:after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.75;
+  background: #0367e8;
+}
 .slider-layout1 video {
   position: relative;
   width: 100%;
@@ -9741,4 +9758,3 @@ div#wrapper.open > .offcanvas-mask {
 .section-three p {
   color: #5a5a5a;
 }
-

@@ -9762,6 +9762,15 @@ div#wrapper.open > .offcanvas-mask {
   width: 60% !important;
 }
 
+.pittsburg-green-logo {
+  position: relative;
+  padding: 15px 0 !important;
+}
+
+.pittsburg-green-logo img {
+  width: 35% !important;
+}
+
 .about-box-layout2-purple-fig {
   position: absolute;
   background-image: url("../img/features-bg.jpg");

@@ -21,6 +21,7 @@
     <link rel="stylesheet" href="./clenix/assets/css/select2.min.css">
     <link rel="stylesheet" href="./clenix/assets/css/jquery.datetimepicker.css">
     <link rel="stylesheet" href="./clenix/assets/css/style.css">
+    <link rel="stylesheet" href="./clenix/assets/css/dngcarpetcleaning.css">
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
     <link href="./clenix/assets/css/slick.css" rel="stylesheet">
     <link href="./clenix/assets/css/lightbox.css" rel="stylesheet">
@@ -792,7 +793,7 @@
                     <li>and more.</li>
                 </ul>
             </div>
-            <div id="mapid"></div>
+            <div id="dng-carpet-cleaning"></div>
         </div>
     </section>
     <!-- Location Section End -->
@@ -1128,6 +1129,19 @@
     <script src="./clenix/assets/js/main.js"></script>
     <script>
         new WOW().init();
+
+        function clueCleaning() {
+            var map = L.map('dng-carpet-cleaning').setView([30.11849, -90.25028
+            ], 9);
+            mapLink = '<a href="http://openstreetmap.org">OpenStreetMap</a>';
+            L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                attribution: '&copy; ' + mapLink + ' Contributors',
+                maxZoom: 18,
+            }).addTo(map);
+            map = L.circle([30.11849, -90.25028
+            ], { radius: 40000 }).addTo(map);;
+        }
+        clueCleaning();
     </script>
 </body>
 
