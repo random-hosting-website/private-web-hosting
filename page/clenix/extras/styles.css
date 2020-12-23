@@ -102,3 +102,21 @@
   left: 50%;
   transform: translateY(-50%) translateX(70%);
 }
+
+.about-box-layout5 .popup-img-united-states-service-cleaning {
+  position: absolute;
+  bottom: -135px;
+  right: 0;
+}
+.about-box-layout5 .popup-img-united-states-service-cleaning img {
+  position: relative;
+  width: 70%;
+  left: 50%;
+  transform: translateX(-28%);
+}
+.about-box-layout5 .popup-img-united-states-service-cleaning .item-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%) translateX(70%);
+}
